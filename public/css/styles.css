@@ -8,7 +8,7 @@
     --font-shadow-two: #ffffff;
 }
 
-body { background-color: #f0f0f0; }
+body { background-color: var(--main-bg-color); width: 100vw; }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -22,7 +22,7 @@ body { background-color: #f0f0f0; }
         border-radius: 10px;
         padding: 13px;
     }
-    
+
     .header a {
         margin: 10px;
         margin-left: auto;
@@ -35,7 +35,7 @@ body { background-color: #f0f0f0; }
         font-style: normal;
         text-decoration: none;
     }
-    
+
     .topnav {
         overflow: hidden;
         margin: 8px;
@@ -46,7 +46,7 @@ body { background-color: #f0f0f0; }
         background: #ffffff;
         box-shadow:  13px 13px 30px var(--font-shadow-one), -13px -13px 30px var(--font-shadow-two);
     }
-    
+
     .topnav a {
         font-family: "Oswald", "Nunito Semibold";
         font-size: 14px;
@@ -93,7 +93,7 @@ body { background-color: #f0f0f0; }
         border-radius: 15px;
         padding: 15px;
     }
-    
+
     .header a {
         margin: 15px;
         margin-left: auto;
@@ -106,7 +106,7 @@ body { background-color: #f0f0f0; }
         font-style: normal;
         text-decoration: none;
     }
-    
+
     .topnav {
         overflow: hidden;
         margin: 12px;
@@ -164,7 +164,7 @@ body { background-color: #f0f0f0; }
         border-radius: 15px;
         padding: 15px;
     }
-    
+
     .header a {
         margin: 25px;
         margin-left: auto;
@@ -177,7 +177,7 @@ body { background-color: #f0f0f0; }
         font-style: normal;
         text-decoration: none;
     }
-    
+
     .topnav {
         overflow: hidden;
         margin: 15px;
@@ -188,7 +188,7 @@ body { background-color: #f0f0f0; }
         background: #ffffff;
         box-shadow:  20px 20px 60px var(--font-shadow-one), -20px -20px 60px var(--font-shadow-two);
     }
-    
+
     .topnav a {
         font-family: "Oswald", "Nunito Semibold";
         color: var(--font-color);
@@ -207,7 +207,7 @@ body { background-color: #f0f0f0; }
     }
 
     #frame1 {
-        height: 260px; 
+        height: 260px;
         order: 1;
         flex-grow: 1;
     }
@@ -235,7 +235,7 @@ body { background-color: #f0f0f0; }
         border-radius: 15px;
         padding: 15px;
     }
-    
+
     .header a {
         margin: 25px;
         margin-left: auto;
@@ -248,7 +248,7 @@ body { background-color: #f0f0f0; }
         font-style: normal;
         text-decoration: none;
     }
-    
+
     .topnav {
         overflow: hidden;
         margin: 15px;
@@ -259,7 +259,7 @@ body { background-color: #f0f0f0; }
         background: #ffffff;
         box-shadow:  20px 20px 60px var(--font-shadow-one), -20px -20px 60px var(--font-shadow-two);
     }
-    
+
     .topnav a {
         font-family: "Oswald", "Nunito Semibold";
         color: var(--font-color);
@@ -278,7 +278,7 @@ body { background-color: #f0f0f0; }
     }
 
     #frame1 {
-        height: 360px; 
+        height: 360px;
         order: 1;
         flex-grow: 1;
     }
@@ -306,7 +306,7 @@ body { background-color: #f0f0f0; }
         border-radius: 15px;
         padding: 15px;
     }
-    
+
     .header a {
         margin: 25px;
         font-family: "Oswald", serif;
@@ -324,7 +324,7 @@ body { background-color: #f0f0f0; }
         color: var(--font-color);
         text-decoration: none;
     }
-    
+
     .topnav {
         overflow: hidden;
         margin: 15px;
@@ -335,7 +335,7 @@ body { background-color: #f0f0f0; }
         background: #ffffff;
         box-shadow:  20px 20px 60px var(--font-shadow-one), -20px -20px 60px var(--font-shadow-two);
     }
-    
+
     .topnav a {
         font-family: "Oswald", "Nunito Semibold";
         color: var(--font-color);
@@ -351,7 +351,7 @@ body { background-color: #f0f0f0; }
         background-color: var(--main-bg-color);
         box-shadow: 20px 20px 60px 0px var(--font-shadow-one), 20px 20px 60px 0px var(--font-shadow-two);
         border-radius: 25px;
-    }    
+    }
 
     .frame1 {
         object-fit: cover;
@@ -399,23 +399,30 @@ body { background-color: #f0f0f0; }
     }
 
     .content-wrapper {
+        display: flex;
+        height: 100%;
         margin: 20px;
         padding: 20px;
     }
 
     .sidebar {
-        float: left;
+        position: relative;
+        width: 20%;
+        background-color: white;
+        overflow: hidden;
+        display: block;
         margin: 0px 10px 0px 10px;
         padding: 50px;
         font-family: Oswald;
         text-decoration: none;
         color: var(--font-shadow-two);
-        max-width: 320px;
-        min-width: 280px;
         height: 600px;
         overflow: hidden;
         background: #555658;
         box-shadow: inset 14px 14px 28px #3b3b3d, inset -14px -14px 28px #6f7173;
+        -moz-box-shadow: inset 14px 14px 28px #3b3b3d, inset -14px -14px 28px #6f7173;
+        -webkit-box-shadow: inset 14px 14px 28px #3b3b3d, inset -14px -14px 28px #6f7173;
+        -khtml-box-shadow: inset 14px 14px 28px #3b3b3d, inset -14px -14px 28px #6f7173;
         border-radius: 20px;
     }
 
@@ -431,25 +438,28 @@ body { background-color: #f0f0f0; }
         font-size: 36px;
     }
 
-    .productcontainer {
-        flex-grow: 2;
-        display: flex;
-    }
-
     .product {
         display: flex;
-        margin: 10px 0px 10px 20px;
+        margin: 0px 0px 20px 20px;
         flex-grow: 2;
         width: auto;
         height: 300px;
     }
 
     .productimage {
-        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: auto;
         margin: 0px 20px 0px 20px;
-        overflow: visible;
-        background-color: rgba(0, 153, 255, 0.5);
-        box-shadow: 20px 20px 60px 0px #bababa, 20px 20px 60px 0px #ffffff;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .productimage img {
+        max-width: 350px;
+        max-height: 300px;
         border-radius: 20px;
     }
 
@@ -459,8 +469,10 @@ body { background-color: #f0f0f0; }
         width: auto;
         height: auto;
         overflow: visible;
-        background-color: rgba(0, 153, 255, 0.5);
-        box-shadow: 20px 20px 60px 0px #bababa, 20px 20px 60px 0px #ffffff;
+        background-color: var(--colour-two);
+        box-shadow: inset 20px 20px 60px #c78c1b,
+        inset -20px -20px 60px #ffdc2b;
         border-radius: 20px;
     }
+
 }
