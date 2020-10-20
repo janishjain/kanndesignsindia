@@ -16,7 +16,7 @@
                 <img src="<?php echo base_url('/images/bg_2.jpg')?>" alt="First slide">
             </div>
             <div class="productdesc">
-                This is a table
+                <h3>THIS IS A TITLE</h3>
             </div>
         </div>
         <div class="product row">
